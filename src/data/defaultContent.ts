@@ -1,0 +1,287 @@
+import { PhotoSlot, StoryContent } from '../types';
+
+export const INITIAL_PHOTO_SLOTS: PhotoSlot[] = [
+  {
+    id: 'photo-1',
+    slotNumber: 1,
+    layoutType: 'polaroid',
+    imageUrl: '/photos/photo-1.jpg',
+    driveId: '1D0oIJ6G7wVtBf-_OBRyW-ddQ3KuBTCbD',
+    driveUrl: 'https://drive.google.com/uc?export=view&id=1D0oIJ6G7wVtBf-_OBRyW-ddQ3KuBTCbD',
+    placeholderType: 'camera',
+    chapterLabel: 'Chapter 01 · May 2026',
+    caption: 'A little moment worth remembering.',
+    rotation: -2,
+    accentColor: 'sky',
+  },
+  {
+    id: 'photo-2',
+    slotNumber: 2,
+    layoutType: 'staggered',
+    imageUrl: '/photos/photo-2.jpg',
+    driveId: '1stT4ZoPh1nJeq2kmQ4Sww8SX-6ibG075',
+    driveUrl: 'https://drive.google.com/uc?export=view&id=1stT4ZoPh1nJeq2kmQ4Sww8SX-6ibG075',
+    placeholderType: 'cloud',
+    chapterLabel: 'Chapter 02 · Smiles & Conversations',
+    caption: 'One for the memory book.',
+    rotation: 1.5,
+    accentColor: 'lilac',
+  },
+  {
+    id: 'photo-3',
+    slotNumber: 3,
+    layoutType: 'fullwidth',
+    imageUrl: '/photos/photo-3.jpg',
+    driveId: '1cSOSrxjfyPysPu0C1SWZgicMQHTxZO0_',
+    driveUrl: 'https://drive.google.com/uc?export=view&id=1cSOSrxjfyPysPu0C1SWZgicMQHTxZO0_',
+    placeholderType: 'horizon',
+    chapterLabel: 'Chapter 03 · The Birthday Girl',
+    caption: 'A picture of the birthday girl.',
+    rotation: 0,
+    accentColor: 'baby-blue',
+  },
+  {
+    id: 'photo-4',
+    slotNumber: 4,
+    layoutType: 'lilac-frame',
+    imageUrl: '/photos/photo-4.jpg',
+    driveId: '1Klvdxi-DgpwhYOvn5jUWvuh2nn3_0VyH',
+    driveUrl: 'https://drive.google.com/uc?export=view&id=1Klvdxi-DgpwhYOvn5jUWvuh2nn3_0VyH',
+    placeholderType: 'sparkle',
+    chapterLabel: 'Chapter 04 · Pure Sunshine',
+    caption: 'A moment that deserves its own little space.',
+    rotation: -1,
+    accentColor: 'lilac',
+  },
+  {
+    id: 'photo-5',
+    slotNumber: 5,
+    layoutType: 'offset',
+    imageUrl: '/photos/photo-5.jpg',
+    driveId: '1lAATVaa5seclyYxqJAO4HKSlrbBqlb2t',
+    driveUrl: 'https://drive.google.com/uc?export=view&id=1lAATVaa5seclyYxqJAO4HKSlrbBqlb2t',
+    placeholderType: 'heart',
+    chapterLabel: 'Chapter 05 · Little Joys',
+    caption: 'That unmistakable radiant laughter.',
+    rotation: 2,
+    accentColor: 'sky',
+  },
+  {
+    id: 'photo-6',
+    slotNumber: 6,
+    layoutType: 'card',
+    imageUrl: '/photos/photo-6.jpg',
+    driveId: '1-75dGZdhynFXD4f--dxbkrhrYYihOv1u',
+    driveUrl: 'https://drive.google.com/uc?export=view&id=1-75dGZdhynFXD4f--dxbkrhrYYihOv1u',
+    placeholderType: 'book',
+    chapterLabel: 'Chapter 06 · Grace & Warmth',
+    caption: 'Grace, confidence, and genuine warmth.',
+    rotation: -0.8,
+    accentColor: 'baby-blue',
+  },
+  {
+    id: 'photo-7',
+    slotNumber: 7,
+    layoutType: 'polaroid',
+    imageUrl: '/photos/photo-7.jpg',
+    driveId: '1nw7ezsNBWUOjo6Eouhha2Fp6BP-059Wz',
+    driveUrl: 'https://drive.google.com/uc?export=view&id=1nw7ezsNBWUOjo6Eouhha2Fp6BP-059Wz',
+    placeholderType: 'stars',
+    chapterLabel: 'Chapter 07 · Just Tracy',
+    caption: 'Always bringing smiles into ordinary days. 🩵',
+    rotation: 1.2,
+    accentColor: 'lilac',
+  },
+];
+
+export const INITIAL_STORY_CONTENT: StoryContent = {
+  recipientName: 'Tracy',
+  recipientFullName: 'Tracy Anne',
+  openingTag: 'Hey Tracy 🩵',
+  openingSubheading: 'Happy birthday, Tracy Anne.',
+  openingMessage1: 'I could have sent you an ordinary birthday message, but somehow, that didn’t feel like enough.',
+  openingMessage2: 'So I made a little something for you. A few memories, a few things I appreciate about you, and a little reminder of how glad I am that our paths crossed.',
+  openButtonText: 'Open your surprise 🩵',
+
+  // Chapter 1
+  mayTitle: 'It Started in May',
+  mayTimelineDate: 'May 2026',
+  mayParagraphs: [
+    'Hey Tracy, it’s funny how life works sometimes.',
+    'You meet someone online, start talking, and you don’t always realise what that little connection might come to mean to you.',
+    'When we met in May, I had no idea I’d eventually be putting together a whole birthday website for you. 😂🩵',
+    'But here we are.',
+    'And honestly, I’m glad our paths crossed.',
+  ],
+  mayChatScreenshot: '/photos/chat-beginning.jpg',
+
+  // Chapter 2
+  personalityCards: [
+    {
+      id: 'explore',
+      tag: 'Curiosity & Discovery',
+      title: 'The Girl Who Loves to Explore',
+      quote: '“The places you could discover, the people you could meet, the cultures you could experience, and all the meals you still have to try.”',
+      details:
+        'One thing I love about what you’ve shared with me is your curiosity about the world. I hope life gives you more opportunities to see the world, collect beautiful memories, and experience things that make you happy.',
+      accent: 'sky',
+      icon: 'globe',
+    },
+    {
+      id: 'food',
+      tag: 'Flavor & Kitchen Opinions',
+      title: 'The Girl Who Appreciates Good Food',
+      quote: '“And of course, the food must be properly prepared. I haven’t forgotten that part. 😂🩵”',
+      details:
+        'And Tracy, we cannot talk about you without acknowledging the food matter. 😂 A girl who appreciates good food and is willing to learn new dishes? I hope this next chapter comes with plenty of delicious meals, new recipes, and opportunities to eat something amazing.',
+      accent: 'baby-blue',
+      icon: 'utensils',
+    },
+    {
+      id: 'brunch',
+      tag: 'Peace & Good People',
+      title: 'The Girl Who Enjoys Her Own Company',
+      quote: '“Both kinds of happiness: peaceful moments to yourself, and beautiful days surrounded by people who genuinely make you smile.”',
+      details:
+        'I like that you can enjoy your own company and still appreciate those moments spent laughing and making memories with your people over brunch. May this year give you calm solitude and joyful company in perfect measure.',
+      accent: 'lilac',
+      icon: 'coffee',
+    },
+    {
+      id: 'business',
+      tag: 'Vision & Tenacity',
+      title: 'The Girl With Dreams and Plans',
+      quote: '“There’s also the side of you that’s building something. Keep going, Tracy. Your dreams deserve the chance to grow.”',
+      details:
+        'From studying accounting, management, and finance, to working in microfinance and logistics, to running your snail business connecting orders from Cameroon to Canada and the United States—I admire that drive. Building takes patience and effort. For this new chapter, I hope your efforts open even more doors and your business thrives in beautiful ways.',
+      accent: 'sky',
+      icon: 'rocket',
+    },
+  ],
+
+  // Chapter 3
+  faithTitle: 'The Faith You Carry',
+  faithSubtitle: 'A quiet grace anchored in trust, prayer, and morning light',
+  faithParagraphs: [
+    'Tracy, one of the things you’ve shared with me is how much your faith matters in your life.',
+    'So, as you step into another year, one of my wishes for you is that God continues to guide your steps, strengthen your heart, and give you peace in every season.',
+    'May He bless the work of your hands, give you wisdom for the decisions ahead, and lead you towards the opportunities that are right for you.',
+    'May your prayers be met with grace, may your faith remain strong through every season, and may you continue to find reasons to be grateful.',
+    'Happy birthday, Tracy. May this new chapter be filled with God’s guidance and goodness.',
+  ],
+
+  // Chapter 4
+  littleThingsTitle: 'The Little Things That Make You You',
+  littleThingsIntro:
+    'Tracy, sometimes it’s the little things that make a person memorable. The conversations, the jokes, the random things we end up talking about, and the moments that make an ordinary day feel a little less ordinary.',
+  littleThingsCards: [
+    {
+      id: 'lt-1',
+      tag: 'Checking In',
+      text: 'The thoughtful way you check on people and ask about their day with genuine attention.',
+      reflection: 'It’s a rare and beautiful quality that brings lightness to people’s routines.',
+    },
+    {
+      id: 'lt-2',
+      tag: 'Laughter & Banter',
+      text: 'The playful humour that slips effortlessly into our conversations.',
+      reflection: 'The moments where you crack up or drop a funny observation make any chat memorable.',
+    },
+    {
+      id: 'lt-3',
+      tag: 'Encouraging Words',
+      text: 'The natural encouragement and positive perspective you share.',
+      reflection: 'You might not always realise the effect you have on someone else’s day. But since we met, you’ve given me reasons to smile, and I’m genuinely grateful for that.',
+    },
+  ],
+
+  // Chapter 6: Wishes
+  wishes: [
+    {
+      id: 'w-1',
+      title: 'Business & Career Growth',
+      description: 'May your snail business reach new milestones, client orders multiply, and your professional steps be rewarded abundantly.',
+      icon: 'business',
+      accent: 'sky',
+    },
+    {
+      id: 'w-2',
+      title: 'Deep Peace & Health',
+      description: 'May this year wrap you in good health, gentle mornings, and a peaceful mind that rests easy at night.',
+      icon: 'peace',
+      accent: 'lilac',
+    },
+    {
+      id: 'w-3',
+      title: 'Warm Friendships',
+      description: 'May you be surrounded by friends who cheer you on, make you laugh until your stomach hurts, and truly appreciate your heart.',
+      icon: 'friendship',
+      accent: 'baby-blue',
+    },
+    {
+      id: 'w-4',
+      title: 'Adventures & Travel',
+      description: 'May your calendar hold new passport stamps, scenic horizons, and encounters with vibrant cultures across the globe.',
+      icon: 'travel',
+      accent: 'sky',
+    },
+    {
+      id: 'w-5',
+      title: 'Delicious Food & Recipes',
+      description: 'Plenty of incredible meals, fun cooking experiments, and properly seasoned culinary wonders to delight in.',
+      icon: 'food',
+      accent: 'baby-blue',
+    },
+    {
+      id: 'w-6',
+      title: 'Strength in Faith',
+      description: 'Wisdom for every crossroads, answered prayers, and unwavering trust that God is holding every tomorrow.',
+      icon: 'faith',
+      accent: 'lilac',
+    },
+    {
+      id: 'w-7',
+      title: 'Fulfillment of Aspirations',
+      description: 'The courage to take big leaps and the sweet satisfaction of watching your hard work turn into tangible victories.',
+      icon: 'joy',
+      accent: 'sky',
+    },
+    {
+      id: 'w-8',
+      title: 'Countless Reasons to Smile',
+      description: 'Ordinary days filled with unexpected blessings, sweet surprises, and simple moments of pure happiness.',
+      icon: 'smile',
+      accent: 'lilac',
+    },
+  ],
+
+  // Chapter 7: Letter
+  letter: {
+    title: 'A Letter Just for You',
+    salutation: 'Hey Tracy,',
+    paragraphs: [
+      'If there’s one thing I wanted to make sure I did today, it was to celebrate you properly.',
+      'Since we met in May, you’ve become someone whose presence I genuinely appreciate. It’s funny how a connection that starts online can turn into conversations and little moments that bring a smile to your face.',
+      'I’m glad I got to know you, Tracy. I’m glad we’ve had the chance to talk, laugh, share thoughts, and learn little things about each other.',
+      'I hope this new year brings you closer to the things you’ve been praying and working for. I hope your business grows, your plans begin to fall into place, and you find opportunities that remind you why you started.',
+      'I hope you get to explore more of the world, experience beautiful cultures, eat plenty of amazing food, and create memories you’ll look back on with a smile.',
+      'Above all, I pray that God guides you, protects your peace, strengthens your faith, and gives you reasons to be thankful in every season.',
+      'You deserve a birthday that makes you smile, and a year that gives you plenty more reasons to do so.',
+      'Thank you for being part of the little story that began in May.',
+      'Happy birthday, Tracy Anne. 🩵',
+      'I hope this next chapter is beautiful.',
+    ],
+    signoff: 'With genuine appreciation and warmest birthday wishes ✨',
+  },
+
+  // Finale
+  finale: {
+    headline: 'HAPPY BIRTHDAY, TRACY ANNE! 🩵🎂',
+    blessing: 'May this new chapter bring you closer to your dreams, fill your heart with peace, strengthen your faith, and give you countless reasons to smile.',
+    empowerment: 'Keep being you, Tracy. The world is still waiting for all the beautiful things you’re going to do.',
+    closingNote: 'I’m really glad our paths crossed. Happy birthday once again. 🩵',
+    closingSignature: 'Made with love by Abiodun 🩵',
+    closingSubtext: 'I cared about you, and I wanted you to feel celebrated today.',
+    replayText: 'Experience the story again',
+  },
+};

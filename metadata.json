@@ -1,0 +1,6 @@
+{
+  "name": "For Tracy Anne - Birthday Surprise",
+  "description": "A personalized birthday celebration website created for Tracy Anne, capturing her faith, passions, and adventures in serene sky blue and lilac.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
